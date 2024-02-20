@@ -1134,9 +1134,9 @@ h6 {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
   border: 1px solid #2e3133;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .contact .php-email-form input {
@@ -1263,3 +1263,72 @@ h6 {
 .footer .credits a {
   color: var(--color-primary);
 }
+/* Profile Image Start */
+img.profile-image {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #474a4d;
+  margin: 0 auto;
+}
+/* Profile Iamge End */
+
+/* Text Change (start) */
+.text-container {
+  display: inline-flex;
+  flex-direction: column;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+.text-container span {
+  height: 2.3rem;
+  color: rgb(255, 255, 255);
+  animation: moveUp 15s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  
+  5% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-2.3rem);
+  }
+
+  25% {
+    transform: translateY(-2.3rem);
+  }
+
+  35% {
+    transform: translateY(-4.6rem);
+  }
+
+  45% {
+    transform: translateY(-4.6rem);
+  }
+
+  55% {
+    transform: translateY(-6.9rem);
+  }
+
+  65% {
+    transform: translateY(-6.9rem);
+  }
+
+  75% {
+    transform: translateY(-9.2rem);
+  }
+
+  95% {
+    transform: translateY(-9.2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Text Change (End) */
