@@ -1332,3 +1332,7 @@ img.profile-image {
   }
 }
 /* Text Change (End) */
+
+.header-social-links.home {
+  display: flex;
+}
