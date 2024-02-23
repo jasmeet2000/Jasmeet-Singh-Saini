@@ -1336,3 +1336,13 @@ img.profile-image {
 .header-social-links.home {
   display: flex;
 }
+
+/* List text hover */
+ li.skills:hover {
+  color: #27a776;
+}
+
+/* Technical skills context  */
+p.tech-skills-content {
+  margin-top: -25px;
+}
