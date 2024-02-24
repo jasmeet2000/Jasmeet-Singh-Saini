@@ -1346,3 +1346,10 @@ img.profile-image {
 p.tech-skills-content {
   margin-top: -25px;
 }
+
+/* lpu education's skill section  */
+section.lpu {
+  padding: 36px 0px 30px 0px;
+  min-height: 30vh;
+  position: relative;
+}
