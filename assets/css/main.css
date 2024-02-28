@@ -1338,7 +1338,7 @@ img.profile-image {
 }
 
 /* List text hover */
- li.skills:hover {
+.skills:hover {
   color: #27a776;
 }
 
