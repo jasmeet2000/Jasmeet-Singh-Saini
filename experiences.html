@@ -1,16 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Development</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Experience - Jasmeet Singh Saini</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+.timeline{
+  position:relative;
+  margin:20px auto;
+  padding:10px 0;
+  width:1000px;
+  box-sizing:border-box;
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:100%;
+  background:#c5c5c5;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:#27a776;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #61ffc2;
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background: #27a776;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #61ffc2;
+}
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  color: #27a776;
+  font-weight:600;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+  background: #27a776;
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px #61ffc2;
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+  background: #27a776;
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px #61ffc2;
+}
+@media(max-width:1000px)
+{
+  .timeline{
+    width:100%;
+  }
+}
+@media(max-width:767px){
+  .timeline{
+    width:100%;
+    padding-bottom:0;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}
+    </style>
+
+    <!-- =======================================================
+  * Name    : Portfolio 
+  * Updated : Feb 14 2024 
+  * URL     : https://github.com/jasmeet2000
+  * Author  : Jasmeet Singh Saini
+  * License : GitHub
+  ======================================================== -->
 </head>
+
 <body>
 
-    <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <p>
-            Under Development
-        </p>
-    </a>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img class="profile-image" src="assets/img/testimonials/profile-image.jpg" alt="Jasmeet Singh Saini">
+                <!-- <i class="bi bi-camera"></i> -->
+                <h1>Portfolio</h1>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="experiences.html" class="active">Experience</a></li>
+                    <li class="dropdown"><a href="#"><span>Projects</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="academic_project.html">Academic Projects</a></li>
+                            <li><a href="professional_project.html">Professional Projects</a></li>
+                            <!-- Sub Menu Bar (Start) -->
+                            <!-- <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                </ul>
+              </li> -->
+                            <!-- Sub Menu Bar (End) -->
+                        </ul>
+                    </li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <div class="header-social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/jasmeet.saini.1485?mibextid=ZbWKwL" target="_blank"
+                    class="facebook"><i class="bi bi-facebook  mr-1"></i></a>
+                <a href="https://www.instagram.com/jas__meet/" target="_blank" class="instagram"><i
+                        class="bi bi-instagram  mr-1"></i></a>
+                <a href="https://www.linkedin.com/in/jas-meet/" target="_blank" class="linkedin"><i
+                        class="bi bi-linkedin  mr-1"></i></i></a>
+            </div>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+
+        <!-- ======= End Page Header ======= -->
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Experience</h2>
+                        <p>
+                            Journey through the milestones of my career, where each role and project has contributed to shaping my 
+                            expertise and professional trajectory. From collaborating with diverse teams to spearheading innovative initiatives, 
+                            each experience has been a testament to my dedication, adaptability, and passion for delivering solutions.
+                        </p>
+                        <p>
+                            Explore the depth and breadth of my professional journey, where every challenge met has fueled my growth 
+                            and proficiency in the dynamic landscape of technology.
+                        </p>
+                        <!-- <a class="cta-btn" href="https://drive.google.com/file/d/1nzDBoTpeJIC829A3HixLRucIbNWKeyQY/view?usp=sharing" target="_blank" >Resume</a> -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Page Header -->
+
+        <!-- ======= Section (Start) ======= -->
+        <section id="about" class="about" style="text-align: justify;">
+            <div class="container">
+
+                <div class="row gy-4 justify-content-center">
+                    <!-- Start -->
+                        <div class="timeline">
+                          <ul>
+                            <li>
+                              <div class="content">
+                                <h3>Code Brew Innovations Private Limited, India</h3>
+                                <h5>PHP Developer</h5>
+                                <text>October 2021</text>
+                                <p style="text-align: justify;">
+                                ● Created robust server-side web application logic, ensuring seamless functionality and optimal performance.
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Developed cutting-edge, scalable solutions for both Mobile and Web platforms, adhering to industry best practices.
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Integrated third-party web services into the MVC framework, fostering enhanced functionality and connectivity.
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Collaborated closely with front-end developers, seamlessly integrating their work with the API to achieve a cohesive
+                                product.
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Engaged with SQL databases and their declarative query languages, ensuring data management (CRUD, filter, search,
+                                Window functions)
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Utilised advanced knowledge of code versioning tools, notably Git as well as Bitbucket, for streamlined collaboration and codebase
+                                management.
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Executed optimization strategies for new and existing features, significantly improving overall system performance.
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Conducted rigorous testing procedures, identifying and rectifying bugs to guarantee product satisfaction and
+                                compliance with Quality Assurance standards.
+                                </p>
+                                <p style="text-align: justify;">
+                                ● Proactively researched and recommended innovative ideas and technologies to enhance team capabilities and project
+                                efficiency
+                                </p>
+                                <!-- <p style="text-align: justify;">
+                                    As a PHP Developer, I played a pivotal role in crafting robust server-side web application logic, 
+                                    meticulously ensuring seamless functionality and optimal performance. By using cutting-edge 
+                                    technologies, I developed scalable solutions for both Mobile and Web platforms, adhering rigorously 
+                                    to industry best practices. Integration of <i>third-party web services</i> into the <b>MVC framework</b> further 
+                                    enriched the functionality and connectivity of our applications. Collaboration with front-end 
+                                    developers was seamless, as I adeptly integrated their work with the API to achieve a cohesive 
+                                    product.
+                                </p>
+                                <p style="text-align: justify;">
+                                    My expertise extended to engaging with SQL databases, where I proficiently managed data using 
+                                    declarative query languages, encompassing CRUD operations, filtering, searching, and implementing 
+                                    Window functions. Utilizing advanced knowledge of code versioning tools like Git as well as Bitbucket, I  
+                                    facilitated streamlined collaboration and effective codebase management. Through meticulous optimization 
+                                    strategies, I enhanced both new and existing features, significantly elevating overall system 
+                                    performance. My commitment to quality assurance was unwavering, as I conducted rigorous testing 
+                                    procedures, identifying and rectifying bugs to ensure product satisfaction and compliance with 
+                                    industry standards. Furthermore, I proactively researched and recommended innovative ideas and 
+                                    technologies, contributing to enhanced team capabilities and project efficiency.
+                                </p> -->
+                              </div>
+                              <div class="time">
+                                <h4>November 2022</h4>
+                              </div>
+                            </li>
+                            
+                            <li>
+                              <div class="content">
+                                <h3>Code Brew Innovations Private Limited, India</h3>
+                                <h5>PHP Trainee</h5>
+                                <p>January 2021</p>
+                                <p style="text-align: justify;">
+                                    ● As a PHP trainee, my responsibilities includes assisting senior developers in coding tasks, debugging, testing, and learning PHP frameworks and best practices. 
+                                </p>
+                                <p style="text-align: justify;">
+                                    ● Additionally, as an interns, I participate in project meetings, contribute to documentation, and engage in continuous learning to enhance their PHP skills.
+                                </p>
+                              </div>
+                              <div class="time">
+                                <h4>October 2021</h4>
+                              </div>
+                            </li>
+
+                            <!-- Dummy text (starts here) -->
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>March 2018</h4>
+                              </div>
+                            </li> -->
+                            <!-- Dummy text (Ends here) -->
+                            
+                            <!-- Dummy text (starts here) -->
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>April 2018</h4>
+                              </div>
+                            </li> -->
+                            <!-- Dummy text (Ends here) -->
+                            
+                            <!-- Dummy text (starts here) -->
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>May 2018</h4>
+                              </div>
+                            </li> -->
+                            <!-- Dummy text (Ends here) -->
+                            
+
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>June 2018</h4>
+                              </div>
+                            </li> -->
+                            
+
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>July 2018</h4>
+                              </div>
+                            </li> -->
+                            
+
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>August 2018</h4>
+                              </div>
+                            </li> -->
+
+                            
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>September 2018</h4>
+                              </div>
+                            </li> -->
+                            
+
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>October 2018</h4>
+                              </div>
+                            </li> -->
+                            
+
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>November 2018</h4>
+                              </div>
+                            </li> -->
+                            
+                            <!-- <li>
+                              <div class="content">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                              </div>
+                              <div class="time">
+                                <h4>December 2018</h4>
+                              </div>
+                            </li> -->
+
+                            <div style="clear:both;"></div>
+                          </ul>
+                        </div>
+                    <!-- Ends -->
+                </div>
+
+            </div>
+        </section>
+        <!-- Section (End) -->
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials mt-4">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Testimonials</h2>
+                    <p>What they are saying</p>
+                </div>
+
+                <div class="slides-3 swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                    risus at semper.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                    legam anim culpa.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Sara Wilsson</h3>
+                                    <h4>Designer</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                    minim.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Jena Karlis</h3>
+                                    <h4>Store Owner</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                    dolore labore illum veniam.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>Matt Brandon</h3>
+                                    <h4>Freelancer</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                    veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa fore nisi cillum quid.
+                                </p>
+                                <div class="profile mt-auto">
+                                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
+                                        alt="">
+                                    <h3>John Larson</h3>
+                                    <h4>Entrepreneur</h4>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section><!-- End Testimonials Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <!-- Start Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Portfolio</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://www.linkedin.com/in/jas-meet/">Jasmeet</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
