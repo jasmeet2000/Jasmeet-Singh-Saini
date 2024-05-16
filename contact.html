@@ -150,9 +150,10 @@
         <div class="row justify-content-center mt-4">
 
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="form" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
+                  <input type="hidden" name="access_key" value="7145da12-83c7-4734-965a-9d5b61ed926a">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
@@ -165,12 +166,18 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
+              <div class="form-group">
+                <div class="h-captcha" data-captcha="true"></div>
+              </div>
+              <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              </div> -->
+
               <div class="text-center"><button type="submit">Send Message</button></div>
+              <div id="result"></div>
+            
             </form>
           </div><!-- End Contact Form -->
 
@@ -201,16 +208,62 @@
     <div class="line"></div>
   </div>
 
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- To submit form using PHP used the below js -->
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  
+  <script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+      
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Form submitted successfully";
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+  </script>
 
 </body>
 
