@@ -210,41 +210,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  var form = document.querySelector(".php-email-form");
-
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    var formData = new FormData(form);
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "contact.php", true);
-    xhr.setRequestHeader("Accept", "application/json");
-
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-
-      if (xhr.status === 200) {
-        form.reset();
-        var successMessage = form.querySelector(".sent-message");
-        if (successMessage) {
-          successMessage.style.display = "block";
-        }
-      } else {
-        var errorMessage = form.querySelector(".error-message");
-        if (errorMessage) {
-          errorMessage.style.display = "block";
-          errorMessage.textContent = "Oops! An error occurred while submitting the form.";
-        }
-      }
-    };
-
-    xhr.send(formData);
-  });
-});
-
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 
