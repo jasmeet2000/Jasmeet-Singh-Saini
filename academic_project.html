@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +29,16 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .hero {
+      width: 100%;
+      min-height: 6vh;
+      background: #000;
+      background-size: cover;
+      position: relative;
+      padding: 0px 0 0px 0;
+    }
+  </style>
 
   <!-- =======================================================
   * Name    : Portfolio 
@@ -57,7 +69,8 @@
           <li><a href="education.html">Education</a></li>
           <li><a href="certifications.html">Certifications</a></li>
           <li><a href="experiences.html">Experience</a></li>
-          <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Projects</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="academic_project.html" class="active">Academic Projects</a></li>
               <!-- 
@@ -81,9 +94,12 @@
 
       <div class="header-social-links">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/jasmeet.saini.1485?mibextid=ZbWKwL" target="_blank" class="facebook"><i class="bi bi-facebook  mr-1"></i></a>
-        <a href="https://www.instagram.com/jas__meet/"  target="_blank" class="instagram"><i class="bi bi-instagram  mr-1"></i></a>
-        <a href="https://www.linkedin.com/in/jas-meet/" target="_blank" class="linkedin"><i class="bi bi-linkedin  mr-1"></i></i></a>
+        <a href="https://www.facebook.com/jasmeet.saini.1485?mibextid=ZbWKwL" target="_blank" class="facebook"><i
+            class="bi bi-facebook  mr-1"></i></a>
+        <a href="https://www.instagram.com/jas__meet/" target="_blank" class="instagram"><i
+            class="bi bi-instagram  mr-1"></i></a>
+        <a href="https://www.linkedin.com/in/jas-meet/" target="_blank" class="linkedin"><i
+            class="bi bi-linkedin  mr-1"></i></i></a>
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -94,20 +110,21 @@
   <main id="main" data-aos="fade" data-aos-delay="1500">
 
     <!-- ======= End Page Header ======= -->
-    <div class="page-header d-flex align-items-center">
+    <div class="page-header d-flex align-items-center" style="padding: 110px 0 0 0;">
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
             <h2>Academic Projects</h2>
             <p>
-              Explore my diverse range of academic projects, showcasing my expertise in <b>data science</b>, <b>analytics</b>, and <b>software development</b>.
+              Explore my diverse range of academic projects, showcasing my expertise in <b>data science</b>,
+              <b>analytics</b>, and <b>software development</b>.
             </p>
             <p>
-              Each project highlights my <i>problem-solving</i> abilities, <i>technical skills</i>, and dedication to excellence in the field of <i>computer science</i> with <b>GitHub link</b>.
+              Each project highlights my <i>problem-solving</i> abilities, <i>technical skills</i>, and dedication to
+              excellence in the field of <i>computer science</i>
+              (provided with <a href="https://github.com/jasmeet2000/" target="_blank" title="Click to view GitHub link."><b>GitHub</b></a> link).
             </p>
-
-            <a class="cta-btn" href="contact.html">Available for hire</a>
-
+            <!-- <a class="cta-btn" href="contact.html">Available for hire</a> -->
           </div>
         </div>
       </div>
@@ -117,156 +134,269 @@
     <section id="gallery" class="gallery">
       <div class="container-fluid">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="row gy-4">
+
+          <!-- 1st Project Start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!-- 1st Project End -->
+
+          <!-- 2nd Project Start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!-- 2nd project ends -->
+          
+          <!-- 3rd project start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-3.jpg" title="Gallery 3" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!-- 3rd project ends -->
+
+          <!-- 4th start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-4.jpg" title="Gallery 4" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!-- 4th ends -->
+
+          <!-- start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-5.jpg" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-5.jpg" title="Gallery 5" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!--  end -->
+
+          <!-- start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!--  end -->
+
+          <!-- start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-7.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-7.jpg" title="Gallery 7" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!--  end -->
+
+          <!-- start -->
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-4">
             <div class="gallery-item h-100">
               <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i
+                    class="bi bi-arrows-angle-expand"></i></a>
                 <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
+          </div>
+          <div class="col-lg-6 content">
+            <div class="row mt-4">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sunt, dolorum beatae quisquam maiores quidem sequi 
+                perspiciatis magni ut similique harum deleniti voluptatem quasi quos. Necessitatibus fugit adipisci consequuntur error.
+              </p>
             </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-13.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-14.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-15.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-16.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-16.jpg" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <!--  end -->
+
 
         </div>
-
       </div>
     </section><!-- End Gallery Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials mt-4">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>Curious about my skill set?</p>
+        </div>
+
+        <!-- ======= Next Page Button Section ======= -->
+        <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 text-center">
+                <a href="skill.html" class="btn-get-started"
+                  title="Click to check Skills.">Skills</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Next Page Button Section -->
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
 
   </main><!-- End #main -->
 
@@ -284,7 +414,8 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader">
     <div class="line"></div>
